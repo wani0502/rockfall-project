@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    overflow-x: hidden;      
+}
+.navbar {
+    height: 60px;
+    background-color: #22223B;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.back-link{
+    color:white;
+}
+.login {
+    width: 400px;
+    justify-content: left;
+    display: flex;
+}
+.login p{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    color: white;
+}
+
+.user p {
+    font-size: 0.7rem;
+    margin: 0;
+    color: white;
+}
+
+.chatbot:hover,
+.alerts:hover,
+.map:hover,
+.settings:hover {
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #F7F7FF;
+    box-sizing: border-box;
+}
+
+.user {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.user:hover {
+    border: 2px solid white;
+}
+
+.user i {
+    font-size: 20px;
+}
+
+.user {
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+.navbar>div:not(.login, .user) {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section {
+    width: 100vw;
+    height: 400px;
+    background-image: url('hero4.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #22223B;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 50%;
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 25px;
+    border: 2px solid #4A4E69;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:hover,
+.search-input:focus {
+    border-color: #22223B;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    color: #22223B;
+    font-size: 1.2rem;
+    pointer-events: none;
+    z-index: 1;
+    transition: transform 0.6s ease;
+
+}
+
+.search:hover .search-icon {
+    transform: rotateY(180deg);
+}
+
+.info-section {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.box {
+    background-color: #F7F7FF;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    flex: 1 1 300px;
+    height: 400px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.box h2 {
+    margin-top: 0;
+    color: #22223B;
+}
+
+
+.box {
+    background-color: #22223B;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 45%;
+    min-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box p {
+    color: #f9f9fd;
+}
+
+.box h2 {
+    color: white;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #f0f0f3;
+}
+
+#weather-content,
+#risk-content {
+    font-size: 1rem;
+    color: #22223B;
+}
+
+.risk-sub-boxes {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.active-sensors {
+    color: white;
+
+}
+
+.sub-box {
+    background-color: #0d0e16;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1 1 120px;
+    max-width: 150px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.sub-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sub-box p {
+    padding-top: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.high-risk {
+    background-color: #0d0e16;
+    /* red-ish */
+    color: rgb(248, 5, 5);
+    height: 100px;
+}
+
+.medium-risk {
+    background-color: #0d0e16;
+    /* yellow-ish */
+    color: rgb(224, 186, 14);
+}
+
+.low-risk {
+    background-color: #0d0e16;
+    /* green-ish */
+    color: rgb(43, 228, 18);
+    height: 100px;
+
+}
+
+.sub-box h3 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+.sub-box p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+keep all the css intact and add other details to do the same .box-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sensor-link {
+    color: #f0f0f3;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sensor-link:hover {
+    color: #9ea9ff;
+    transform: scale(1.1);
+}
+
+.footer {
+    background-color: #22223B;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 150px;
+}
+ 

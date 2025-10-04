@@ -1,0 +1,120 @@
+body {
+    background-color: #22223B; 
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #f8f8ff; 
+}
+.back-link{
+    color:white;
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #f8f8ff;
+}
+
+.back-link {
+    color: #9ea9ff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #c2c8ff;
+    transform: translateX(-3px);
+}
+
+.sensors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.sensor-card {
+    background-color: #2a2a4a; 
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sensor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+
+.sensor-card h2 {
+    margin-bottom: 10px;
+    color: #f0f0ff;
+}
+
+.sensor-card p {
+    font-size: 1rem;
+    margin: 0;
+    color: #c3c3e6;
+}
+
+.status-dot {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.active-dot {
+    background-color: #27ae60; 
+    box-shadow: 0 0 8px #27ae60;
+}
+
+.inactive-dot {
+    background-color: #e74c3c; 
+    box-shadow: 0 0 8px #e74c3c;
+}
+
+.active {
+    border: 2px solid #27ae60;
+}
+
+.inactive {
+    border: 2px solid #e74c3c;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .sensor-card {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .back-link {
+        font-size: 0.9rem;
+    }
+}
